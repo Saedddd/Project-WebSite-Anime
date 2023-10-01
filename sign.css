@@ -1,0 +1,330 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Pirata One';
+  font-size: 16px;
+  font-style: noraml;
+  font-weight: normal;
+  color:#102746;
+  text-decoration:none;
+  background:  url("img/bg7.jpg") no-repeat;
+  background-size: cover;
+
+}
+
+/* WARNING:  header
+================================= */
+header{
+  margin-bottom: 100px;
+}
+
+/* WARNING: header
+================================= */
+.header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+
+.header__fixed{
+  position: fixed;
+  top:0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* WARNING: Container && header
+================================= */
+.header__fixed{
+  position: fixed;
+  top:0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* WARNING: Container && header
+================================= */
+.container{
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container__full1{
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container__full{
+  max-width: 1262px;
+  margin-left: 110px;
+  padding: 0 15px;
+}
+
+/* WARNING: ============== Header Burger ================= */
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 999;
+}
+.header_active{
+    background: #0E1D28;
+}
+.header__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item{
+    list-style: none;
+    padding-bottom: 20px;
+    margin-right: 82px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+}
+
+.header__burger{
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger__line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_first{
+    top: 0;
+}
+
+.burger__line_second{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line_third{
+    bottom: 0;
+}
+
+
+
+/* WARNING:  intro
+================================= */
+.intro{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+.intro__block{
+  height: 200px;
+  width: 500px;
+  margin: 0 auto;
+  align-items: center;
+  background-image: ;
+}
+.intro__in{
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  flex-direction: column;
+  padding: 120px 10px;
+  /* background-color: #fff; */
+
+}
+.intro__input{
+  font-family: 'Pirata One';
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.intro__input label{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.intro__text{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.intro__text h1{
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+..intro__text p{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.input{
+  width: 350px;
+  background: transparent;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  padding: 20px 0;
+
+}
+.input::placeholder{
+  color:#fff;
+}
+.btn{
+  padding: 15px 39px;
+  background-color: #1B7DFF;
+  text-transform: uppercase;
+  font-family: 'Pirata One';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  border:0;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus,.btn:active{
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+
+/* WARNING:
+================================= */
+/* WARNING: =================== Media Burger ================== */
+@media screen and (max-width: 767px) {
+  .body{
+    background-size: 360px 720px;
+  }
+  .section-title {
+      margin-bottom: 25px;
+  }
+  .section-title::after {
+      width: 78px;
+  }
+  .container{
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+  }
+  /*============================ header ============================*/
+  .header__burger {
+      display: block;
+      margin-right: 710px;
+      margin-bottom: 20px;
+
+
+  }
+
+  .header__nav{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: url("img/bg3.jpg") no-repeat center;
+      background-size: cover;
+      z-index: 10;
+      padding: 90px;
+      transform: translateX(100%);
+      transition: .2s all linear;
+  }
+  .header__nav_active{
+      height: 100%;
+      transform: translateX(0);
+  }
+  .header__item{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+  }
+  .header__item:last-child{
+      margin-bottom: 0;
+  }
+  .header__logo-pic{
+    width: 120px;
+
+  }
+  .header__list{
+
+  }
+  .header__link{
+      font-size: 42px;
+      line-height: 48px;
+  }
+  .header__nav-close{
+      width: 40px;
+      height: 70px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 11;
+      margin-right: 570px;
+  }
+  .header__nav-close-line{
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+
+  }
+  .header__nav-close-line:first-child{
+      transform: translateY(-50%) rotate(45deg);
+  }
+  .header__nav-close-line:last-child{
+      transform: translateY(-50%) rotate(-45deg);
+  }
+  
+}
